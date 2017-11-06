@@ -7,7 +7,7 @@ This example code was written for Python 2.7 and wraps Mattermost REST APIs as a
 
 
 
-## For windows install
+# For windows install
 
 As part of the installation steps for Mattermost, you'll have to deploy a MySQL DB.
 You may want to deploy WAMP http://www.wampserver.com/en/ so you could leverage PHPMyAdmin to sneak into your Mattermost DB easily.
@@ -37,6 +37,10 @@ On the Okta side, connect to your oktapreview.com account, create a new app from
 In the Provisioning tab > API Integration:
 * base url = https://your-scim-server-url/scim/v2
 * API token = your local token ("yyyyyy" above)
+
+Note:
+Your SCIM server has to be reachable over https. If your Mattermost instance + SCIM server is running on AWS, you can take advantage of AWS ELB to do a https to http routing.
+
 
 Enjoy!
 
