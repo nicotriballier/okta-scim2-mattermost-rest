@@ -23,10 +23,10 @@ Then download that git repo locally, edit the config.json file :
   "config": {
     "mattermost": {
       "api_endpoint": "http://localhost:8065/api/v4", // localhost:8065 is where your Mattermost instance is running
-      "personal_access_token": "xxxxxxxx" <<--- the personal access token you generated as an admin
+      "personal_access_token": "xxxxxxxx" // the personal access token you generated as an admin
     },
     "scim_endpoint":{
-      "local_token": "yyyyyyy" <--- the token you manually created, stored in that config.json file and on Okta side so Okta is authorized to reach your SCIM endpoint.
+      "local_token": "yyyyyyy" // the token you manually created, stored in that config.json file and on Okta side so Okta is authorized to reach your SCIM endpoint.
     }
   }
 }
