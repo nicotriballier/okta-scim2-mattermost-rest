@@ -18,7 +18,7 @@ Once you have your Mattermost instance running, sign-in as an admin and create a
 
 Then download that git repo locally, edit the config.json file :
 
-```json
+```js
 {
   "config": {
     "mattermost": {
