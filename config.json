@@ -2,10 +2,10 @@
   "config": {
     "mattermost": {
       "api_endpoint": "http://localhost:8065/api/v4",
-      "personal_access_token": "5ab7f7ub1prrpkw1g3tqtqeiyo"
+      "personal_access_token": "XXXXX"
     },
     "scim_endpoint":{
-      "local_token": "goodtoken"
+      "local_token": "XXXXX"
     }
   }
 }
