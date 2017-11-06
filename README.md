@@ -22,7 +22,7 @@ Then download that git repo locally, edit the config.json file :
 {
   "config": {
     "mattermost": {
-      "api_endpoint": "http://localhost:8065/api/v4", // localhost:8065 is where your Mattermost instance is running
+      "api_endpoint": "http://localhost:8065/api/v4", <<--- localhost:8065 is where your Mattermost instance is running
       "personal_access_token": "xxxxxxxx" <<--- the personal access token you generated as an admin
     },
     "scim_endpoint":{
@@ -31,3 +31,13 @@ Then download that git repo locally, edit the config.json file :
   }
 }
 ```
+Then run your python server (see https://github.com/oktadeveloper/okta-scim-beta)
+
+On the Okta side, connect to your oktapreview.com account, create a new app from Okta OAN, select SCIM2.0.
+In the Provisioning tab > API Integration:
+* base url = https://your-scim-server-url/scim/v2
+* API token = your local token ("yyyyyy" above)
+
+Enjoy!
+
+
