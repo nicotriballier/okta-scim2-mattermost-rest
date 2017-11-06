@@ -22,7 +22,7 @@ Then download that git repo locally, edit the config.json file :
 {
   "config": {
     "mattermost": {
-      "api_endpoint": "http://localhost:8065/api/v4", <<--- localhost:8065 is where your Mattermost instance is running
+      "api_endpoint": "http://localhost:8065/api/v4", // localhost:8065 is where your Mattermost instance is running
       "personal_access_token": "xxxxxxxx" <<--- the personal access token you generated as an admin
     },
     "scim_endpoint":{
